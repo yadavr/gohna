@@ -6,4 +6,4 @@
 /sites/*/cache
 /.editorconfig
 /.gitattributes
-/sites/default/files/
+web/sites/default/files/

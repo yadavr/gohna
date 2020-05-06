@@ -39,6 +39,7 @@ class HeroController extends ControllerBase {
       '#theme' => 'hero_list',
       '#items'  =>  $heroes,
       '#title' => $this->t('Our wonderful heroes list'),
+      '#param' => 'Rajesh',
     ];
 
   }

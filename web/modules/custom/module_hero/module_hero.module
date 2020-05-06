@@ -14,7 +14,7 @@
 
    return [
      'hero_list' => [
-       'variables' => ['items'=>[],'title' => ''],
+       'variables' => ['items'=>[],'title' => '','param' => ''],
      ]
    ];
 
