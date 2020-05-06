@@ -1,0 +1,9 @@
+/vendor
+
+# Ignore paths that may contain temporary files
+/sites/*/translations
+/sites/*/tmp
+/sites/*/cache
+/.editorconfig
+/.gitattributes
+/sites/default/files/

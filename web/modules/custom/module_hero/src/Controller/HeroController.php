@@ -2,11 +2,15 @@
 
 namespace Drupal\module_hero\Controller;
 
+use Drupal\Core\Controller\ControllerBase;
+
+
+
 /**
 * This is our hero controller
 */
 
-class HeroController {
+class HeroController extends ControllerBase {
 
   public function heroList() {
 
@@ -26,7 +30,7 @@ class HeroController {
 
     return [
       '#type' => 'markup',
-      '#markup' => '<ol>'.$ourHeros.'</ol>',
+      '#markup' => '<h4>'.$this->t('These are our best heros'). '</h4><ol>'.$ourHeros.'</ol>',
     ];
 
   }
