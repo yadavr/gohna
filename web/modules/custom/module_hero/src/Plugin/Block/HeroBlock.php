@@ -18,10 +18,41 @@ class HeroBlock extends BlockBase {
    * {@inheritdoc}
    */
   public function build() {
+
+    $heroes = [
+      ['name'=>'Hulk'],
+      ['name'=>'Thor'],
+      ['name'=>'Iron Man'],
+      ['name'=>'Paranjay'],
+      ['name'=>'Rajesh']
+    ];
+
+    $table = [
+      '#type' => 'table',
+      '#header' => [
+        $this->t('Name'),
+      ]
+    ];
+
+    foreach ($heroes as $value) {
+
+      $table[] = [
+        'name' => [
+          '#type' => 'markup',
+          '#markup' => $value['name'],
+        ],
+      ];
+
+    }
+
+    return $table;
+
+    /*
     return array(
       '#type' => 'markup',
       '#markup' =>  $this->t('The output of our superheros block'),
     );
+    */
   }
 
 }
